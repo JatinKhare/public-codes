@@ -1,0 +1,13 @@
+
+Lmod is automatically replacing "intel/18.0.2" with "gcc/7.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) impi/18.0.2     2) python2/2.7.16
+
+1024
+CUDA_VISIBLE_DEVICES is not set. Assuming 0-3
+Normal took  1.376499842852354
+ngpus 4
+Parallel Sum:  131.65989303588867
+Execution:: Average = 0.18480109050869942 | Median = 0.18480109050869942

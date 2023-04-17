@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -J render           # job name
+#SBATCH -o %j       # expands to jobID
+#SBATCH -N 1                # total number of node
+#SBATCH -n 4                # total number of mpi_estimation tasks requested
+#SBATCH -p gtx              # queue (partition) — normal, development, etc.
+#SBATCH -t 00:30:00         # run time (hh:mm:ss) - 1.5 hours
+module load gcc
+module load cuda
+
+echo "1024"
+python3 attention.py -n 8 -ngpus 4 -fixed 1
+#python3 attention.py -n 1204 -ngpus 4 -fixed 1
+#echo "8192"
+#python3 attention.py -n 8192 -ngpus 4 -fixed 1
+#python3 attention.py -n 8192 -ngpus 4 -fixed 1
+#echo "16384"
+#python3 attention.py -n 16384 -ngpus 4 -fixed 1
+#python3 attention.py -n 16384 -ngpus 4 -fixed 1
