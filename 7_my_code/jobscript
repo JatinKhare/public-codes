@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -J render           # job name
+#SBATCH -o %j       # expands to jobID
+#SBATCH -N 1                # total number of node
+#SBATCH -n 4                # total number of mpi_estimation_estimation tasks requested
+#SBATCH -p gtx              # queue (partition) — normal, development, etc.
+#SBATCH -t 00:30:00         # run time (hh:mm:ss) - 1.5 hours
+module load gcc
+module load cuda
+
+
+
+
+python3 pi_estimation.py -trials 300000000 -tasks 20
+

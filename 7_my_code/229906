@@ -1,0 +1,12 @@
+
+Lmod is automatically replacing "intel/18.0.2" with "gcc/7.3.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) impi/18.0.2     2) python2/2.7.16
+
+Python final estimation of Pi = 3.1415487333333334
+Original elapsed time:  10.46613097190857
+Parla final estimation of Pi = 0.7853994133333333
+PARLA elapsed time:  9.04747724533081
+Speed up: 1.1568010273040357
